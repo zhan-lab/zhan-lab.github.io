@@ -1,0 +1,61 @@
+  <style>
+    /* Carousel container */
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1130px;
+      height: 240px;
+      margin: auto;
+      position: relative;
+    }
+
+    /* Inner carousel with scrolling animation and gap between images */
+    .carousel-track {
+      display: flex;
+      gap: 10px; /* Space between images */
+      animation: scroll 15s linear infinite;
+    }
+
+    /* Pause animation on hover */
+    .carousel:hover .carousel-track {
+      animation-play-state: paused;
+    }
+
+    /* Individual images */
+    .carousel img {
+      width: calc(100% - 10px); /* Adjust to fit within gap */
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Animation keyframes */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-100% - 10px)); }
+    }
+  </style>
+  <div class="carousel">
+    <div class="carousel-track">
+        <img src="img/pubs/ees_2024.png" alt="Image 1">
+        <img src="img/pubs/nnano_2020.png" alt="Image 2">
+        <img src="img/pubs/am_2020.png" alt="Image 3">
+        <img src="img/pubs/book_2020.png" alt="Image 4">
+            <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+                <img src="img/pubs/afm_2024.png" alt="Image 6">
+            <!-- Repeat images for smooth looping -->
+            <img src="img/pubs/ees_2024.png" alt="Image 1">
+            <img src="img/pubs/nnano_2020.png" alt="Image 2">
+            <img src="img/pubs/am_2020.png" alt="Image 3">
+            <img src="img/pubs/book_2020.png" alt="Image 4">
+            <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+                <img src="img/pubs/afm_2024.png" alt="Image 6">
+                <!-- Repeat images for smooth looping -->
+                <img src="img/pubs/ees_2024.png" alt="Image 1">
+                <img src="img/pubs/nnano_2020.png" alt="Image 2">
+                <img src="img/pubs/am_2020.png" alt="Image 3">
+                <img src="img/pubs/book_2020.png" alt="Image 4">
+                <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+                    <img src="img/pubs/afm_2024.png" alt="Image 6">
+    </div>
+  </div>

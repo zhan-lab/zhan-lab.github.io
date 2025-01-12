@@ -97,7 +97,69 @@
                 <h1>Publications</h1>
             
 
-            <p>
+            <style>
+  /* Carousel container */
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1130px;
+    height: 235px;
+    margin: auto;
+    position: relative;
+  }
+
+  /* Inner carousel with scrolling animation and gap between images */
+  .carousel-track {
+    display: flex;
+    gap: 10px; /* Space between images */
+    animation: scroll 20s linear infinite;
+  }
+
+  /* Pause animation on hover */
+  .carousel:hover .carousel-track {
+    animation-play-state: paused;
+  }
+
+  /* Individual images */
+  .carousel img {
+    width: calc(100% - 10px); /* Adjust to fit within gap */
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Animation keyframes */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 10px)); }
+  }
+</style>
+<div class="carousel">
+  <div class="carousel-track">
+      <img src="img/pubs/ees_2024.png" alt="Image 1">
+      <img src="img/pubs/nnano_2020.png" alt="Image 2">
+      <img src="img/pubs/am_2020.png" alt="Image 3">
+      <img src="img/pubs/book_2020.png" alt="Image 4">
+          <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+              <img src="img/pubs/afm_2024.png" alt="Image 6">
+          <!-- Repeat images for smooth looping -->
+          <img src="img/pubs/ees_2024.png" alt="Image 1">
+          <img src="img/pubs/nnano_2020.png" alt="Image 2">
+          <img src="img/pubs/am_2020.png" alt="Image 3">
+          <img src="img/pubs/book_2020.png" alt="Image 4">
+          <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+              <img src="img/pubs/afm_2024.png" alt="Image 6">
+              <!-- Repeat images for smooth looping -->
+              <img src="img/pubs/ees_2024.png" alt="Image 1">
+              <img src="img/pubs/nnano_2020.png" alt="Image 2">
+              <img src="img/pubs/am_2020.png" alt="Image 3">
+              <img src="img/pubs/book_2020.png" alt="Image 4">
+              <img src="img/pubs/jpcc_2023.png" alt="Image 5">
+                  <img src="img/pubs/afm_2024.png" alt="Image 6">
+  </div>
+</div>
+
+<p>
     <a href="/bib/pubs.bib">Download BibTeX.</a>
 </p>
 
@@ -107,21 +169,555 @@
 		<td>
 			<span class="date">
 				
-				<big><strong>2014</strong></big><br />
+				<big><strong>2024</strong></big><br />
+				
+				August
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1002/solr.202400391">Enhanced Efficiency and Stability for the Inverted High-Bandgap Perovskite Solar Cell via Bottom Passivation Strategy</a>.
+			</span><br />
+			<span class="authors">
+				L.-C. Chang, A. Bui, K. Huang, F. Kremer, F. Brink, W. Wang, A. Haggren, A.O. Mayon, X.M.C. Ta, L. Duan, O.L.C. Lem, Y. Hou, D.-T. Nguyen, G.D. Tabi, <b>H.</b> <b>Zhan</b>, V. Ahmad, T. Duong, T. White, D. Walter, K. Weber, K. Catchpole, and H. Shen.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Solar RRL</i> 8(19)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2024</strong></big><br />
 				
 				May
 			</span>
 		</td>
 		<td class="publication">
 			<span class="pubtitle">
-				<img src="img/pdficon_small.png" width="16"
-					height="16" alt="PDF" />
-				<a href="https://www.asdfasdf.asdfasdf.asdfasdfads">Awesome Publication</a>.
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://dx.doi.org/10.1039/D4EE00911H">Physics-based material parameters extraction from perovskite experiments via Bayesian optimization</a>.
 			</span><br />
 			<span class="authors">
-				Author 1 and Author 2.
+				<b>H.</b> <b>Zhan</b>, V. Ahmad, A. Mayon, G. Tabi, A. Bui, Z. Li, D. Walter, H. Nguyen, K. Weber, T. White, and K. Catchpole.
 			</span><br />
-			<span class="venuetype"></span><span class="venue">International Conference on Awesome Research</span>.
+			<span class="venuetype"></span><span class="venue"><i>Energy & Environmental Science</i></span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2024</strong></big><br />
+				
+				February
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://www.sciencedirect.com/science/article/pii/S1385894724005473">Fluorinated polymer additives in Spiro-OMeTAD to improve the efficiency and stability of perovskite solar cells</a>.
+			</span><br />
+			<span class="authors">
+				G. Tabi, D. Nguyen, W. Liang, W. Ji, T. Lu, T. Tran-Phu, O. Lem, A. Mayon, K. Huang, L. Chang, <b>H.</b> <b>Zhan</b>, V. Ahmad, A. Mahmud, Y. Hou, W. Wang, A. Bui, H. Nguyen, Y. Liu, H. Shen, K. Catchpole, K. Weber, T. White, D. Walter, and T. Duong.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Chemical Engineering Journal</i></span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2024</strong></big><br />
+				
+				January
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1021/acsami.3c14680">Control of Neuronal Survival and Development Using Conductive Diamond</a>.
+			</span><br />
+			<span class="authors">
+				S. Falahatdoost, Y. Prawer, D. Peng, A. Chambers, <b>H.</b> <b>Zhan</b>, L. Pope, A. Stacey, A. Ahnood, H. Al Hashem, S. De Leon, D. Garrett, K. Fox, M. Clark, M. Ibbotson, S. Prawer, and W. Tong.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>ACS Applied Materials & Interfaces</i> 16(4)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2024</strong></big><br />
+				
+				January
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1002/adfm.202315495">Controlling the Supramolecular Architecture Enables High Lithium Cationic Conductivity and High Electrochemical Stability for Solid Polymer Electrolytes</a>.
+			</span><br />
+			<span class="authors">
+				K. Xie, Q. Fu, F. Chen, H. Zhu, X. Wang, G. Huang, <b>H.</b> <b>Zhan</b>, Q. Liang, C. Doherty, D. Wang, G. Qiao, and D. Li.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Advanced Functional Materials</i> 34(17)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2023</strong></big><br />
+				
+				August
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1002/9783527843374.ch7">Towards Graphene-FET Health Sensors: Hardware and Implementation Considerations</a>.
+			</span><br />
+			<span class="authors">
+				N. V. Apollo and <b>H.</b> <b>Zhan</b>.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Wiley-VCH</i></span>.
+			<span class="note">
+			(Invited Book Chapter, Corresponding Author).
+			</span>
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2023</strong></big><br />
+				
+				July
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.3c02844">Physics-based machine learning discovered nano-circuitry for nonlinear ion transport in nanoporous materials</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, R. Sandberg, F. Feng, Q. Liang, K. Xie, L. Zu, D. Li, and J. Z. Liu.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>J. Phys. Chem. C.</i> (Cover Article)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2022</strong></big><br />
+				
+				October
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://www.sciencedirect.com/science/article/pii/S2542529322002206">LiI doping of mixed-cation mixed-halide perovskite solar cells: Defect passivation, controlled crystallization and transient ionic response</a>.
+			</span><br />
+			<span class="authors">
+				G. D. Tabi, H. T. Pham, <b>H.</b> <b>Zhan</b>, D. Walter, A. O. Mayon, J. Peng, T. Duong, Mohammed M. Shehata, H. Shen, L. Duan, N. Mozaffari, L. Li, M. A. Mahmud, H. T. Nguyen, K. Weber, K. R. Catchpole, and T. P. White.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Materials Today Physics</i></span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2022</strong></big><br />
+				
+				May
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://www.frontiersin.org/article/10.3389/fchem.2022.924127">Diamond supercapacitors: Towards durable, safe, and biocompatible aqueous-based energy storage</a>.
+			</span><br />
+			<span class="authors">
+				A. Chambers, S. Prawer, A. Ahnood, and <b>H.</b> <b>Zhan</b>.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Front. Chem.</i> (Corresponding Author)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2022</strong></big><br />
+				
+				January
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1021/jacs.1c11241">Self-Assembly of Ir-Based Nanosheets with Ordered Interlayer Space for Enhanced Electrocatalytic Water Oxidation</a>.
+			</span><br />
+			<span class="authors">
+				L. Zu, X. Qian, S. Zhao, Q. Liang, Y. Chen, M. Liu, B. Su, K. Wu, L. Qu, L. Duan, <b>H.</b> <b>Zhan</b>, J. Zhang, C. Li, W. Li, J. Juang, J. Zhu, D. Li, A. Yu, and D. Zhao.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>J. Am. Chem. Soc.</i> 144(5)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2020</strong></big><br />
+				
+				June
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://www.nature.com/articles/s41565-020-0704-7">Electrolyte gating in graphene-based supercapacitors and its use for probing nanoconfined charging dynamics.</a>.
+			</span><br />
+			<span class="authors">
+				J. Xiao*, <b>H.</b>* <b>Zhan</b>, X. Wang, Z. Xu, Z. Xiong, K. Zhang, G. P. Simon, J. Z. Liu, and D. Li.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Nature Nanotechnology</i> (*Equal Contribution)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2020</strong></big><br />
+				
+				May
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://dx.doi.org/10.1039/D0CC02139C">Beneficial restacking of 2D nanomaterials for electrocatalysis: a case of MoS2 membranes</a>.
+			</span><br />
+			<span class="authors">
+				X. Qian, K. Xie, S. Guo, Q. Liang, S. Zhang, Z. Xiong, <b>H.</b> <b>Zhan</b>, C. Liu, X. Yang, J. Zhu, and D. Li.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Chemical Communications</i> 56(51)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2020</strong></big><br />
+				
+				April
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1201/9781003044871">Graphene-Electrolyte Interfaces: Electronic Properties and Applications</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Jenny Stanford Publishing</i></span>.
+			<span class="note">
+			(Invited Book).
+			</span>
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2019</strong></big><br />
+				
+				May
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.201904562">Solvation-Involved Nanoionics: New Opportunities by Two-Dimensional Nanomaterial Laminar Membranes</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, Z. Xiong, C. Cheng, Q. Liang, J. Z. Liu, and D. Li.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Advanced Materials</i> 32(18)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2019</strong></big><br />
+				
+				March
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://dx.doi.org/10.1039/C8CC09970G">Electrochemically-derived graphene oxide membranes with high stability and superior ionic sieving</a>.
+			</span><br />
+			<span class="authors">
+				P. Yu, Z. Xiong, <b>H.</b> <b>Zhan</b>, K. Xie, Y. Zhong, G. P. Simon, and D. Li.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Chemical Communications</i> 55(28)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2018</strong></big><br />
+				
+				May
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://ieeexplore.ieee.org/abstract/document/8419569/">Cooling of Miniature Electronic Systems Using Diamond Circuit Boards</a>.
+			</span><br />
+			<span class="authors">
+				N. V. Apollo, A. Ahnood, <b>H.</b> <b>Zhan</b>, K. Ganesan, A. J. R. Smith, S. Prawer, and D. J. Garrett.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">2018 17th IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (ITherm)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2018</strong></big><br />
+				
+				February
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1021/acsami.7b18596">Polycrystalline Diamond Coating of Additively Manufactured Titanium for Biomedical Applications</a>.
+			</span><br />
+			<span class="authors">
+				A. Rifai, N. Tran, D. W. Lau, A. Elbourne, <b>H.</b> <b>Zhan</b>, A. D. Stacey, E. L. H. Mayes, A. Sarker, E. P. Ivanova, R. J. Crawford, P. A. Tran, B. C. Gibson, A. D. Greentree, E. Pirogova, and K. Fox.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>ACS Applied Materials & Interfaces</i> 10(10)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2018</strong></big><br />
+				
+				January
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://dx.doi.org/10.1039/C7NR06330J">Molecular detection by liquid gated Hall effect measurement of graphene</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, J. Cervenka, S. Prawer, and D. J. Garrett.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Nanoscale</i></span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2017</strong></big><br />
+				
+				March
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://dx.doi.org/10.1021/acs.jpcc.7b00961">Electrical Double Layer at Various Electrode Potentials: A Modification by Vibration</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, J. Cervenka, S. Prawer, and D. J. Garrett.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>J. Phys. Chem. C</i> 121(8)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2016</strong></big><br />
+				
+				January
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4726322/pdf/srep19822.pdf">Direct fabrication of 3D graphene on nanoporous anodic alumina by plasma-enhanced chemical vapor deposition</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, D. J. Garrett, N. V. Apollo, K. Ganesan, D. Lau, S. Prawer, and J. Cervenka.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Scientific Reports</i></span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2013</strong></big><br />
+				
+				September
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1109/MetaMaterials.2013.6808960">Transparent Graphene-Based Non-reciprocal Devices Magnetically Biased with Ferromagnetic Nanowire Metamaterials and Electrically Biased with Frequency Selective Surfaces</a>.
+			</span><br />
+			<span class="authors">
+				C. Caloz, D. L. Sounas, L. P. Carignan, <b>H.</b> <b>Zhan</b>, and N. Chamanara.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>2013 7th International Congress on Advanced Electromagnetic Materials in Microwaves and Optics</i> (Metamaterials 2013)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2011</strong></big><br />
+				
+				November
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://pubs.aip.org/aip/apl/article/99/22/221501/123280">Kinetic solutions for electrons in multi-cusp ion source</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b> and C. Hu.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Applied Physics Letters</i> 99(22)</span>.
+			<br />
+			<span class="links">
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2011</strong></big><br />
+				
+				March
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				<img src="img/pubs/web_link.png" width="16"
+					height="16" alt="Link" />
+				<a href="https://doi.org/10.1063/1.3571292">Theoretical discussion for electron-density distribution in multicusp ion source</a>.
+			</span><br />
+			<span class="authors">
+				<b>H.</b> <b>Zhan</b>, C. Hu, Y. Xie, B. Wu, J. Wang, L. Liang, and J. Wei.
+			</span><br />
+			<span class="venuetype"></span><span class="venue"><i>Applied Physics Letters</i> 98(12)</span>.
 			<br />
 			<span class="links">
 			</span>
@@ -134,9 +730,9 @@
 
             <div class="footer">
                 <p>
-                    <a href="http://dept.example.edu/">Illustrious Department</a>
+                    <a href="https://www.perovskitegroup.com.au/">Perovskite PV Group</a>
                     at the
-                    <a href="http://example.edu/">University of Example</a>
+                    <a href="http://www.anu.edu.au/">Australian National University</a>
                 </p>
             </div>
 
